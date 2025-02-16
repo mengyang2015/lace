@@ -12,15 +12,19 @@
             background-color: #f5f5f5;
             text-align: center;
             color: black;
+            display: flex;
+            flex-direction: column;
+            min-height: 100vh;
         }
         header {
             background-color: #003366;
             color: white;
-            padding: 20px;
+            padding: 10px 20px;
             font-size: 24px;
             display: flex;
             align-items: center;
-            justify-content: center;
+            justify-content: space-between;
+            flex-wrap: wrap;
         }
         .logo {
             width: 160px;
@@ -29,12 +33,9 @@
         .header-content {
             display: flex;
             align-items: center;
+            flex-grow: 1;
+            justify-content: center;
         }
-
-        .header-content-inner img {
-            float: left;   
-        }
-        
         nav {
             padding: 10px;
             background: #002244;
@@ -47,9 +48,10 @@
         }
         section {
             padding: 20px;
+            flex-grow: 1;
         }
-        p {
-            width: 50%;
+        #about {
+            width: 66%;
             margin: 0 auto;
             text-align: left;
         }
@@ -57,16 +59,15 @@
             background: #001122;
             color: white;
             padding: 10px;
-            position: absolute;
-            bottom: 0;
-            width: 100%;
+            text-align: center;
+            margin-top: auto;
         }
     </style>
 </head>
 <body>
     <header>
+        <img src="Lexington Advocates for Civic Engagement.png" alt="LACE Logo" class="logo">
         <div class="header-content">
-            <img src="Lexington Advocates for Civic Engagement.png" alt="LACE Logo" class="logo">
             <h1>Lexington Advocates for Civic Engagement (LACE)</h1>
         </div>
     </header>
@@ -79,20 +80,20 @@
     <section id="about">
         <h2>About LACE</h2>
         <p>The mission of Lexington Advocates for Civic Engagement (LACE) is to promote civic engagement, encourage public participation in local governance, and advocate for community-driven policy initiatives in Lexington, Massachusetts.
-        <br><br>
-        LACE aims to educate, mobilize, and empower residents through civic forums, voter education campaigns, advocacy for local policy changes, and grassroots organizing. These efforts are designed to foster informed decision-making and enhance public involvement in democratic processes.</p>
+        
+        LACE aims to educate, mobilize, and empower residents through civic forums, voter education campaigns, advocacy for local policy changes, and grassroots organizing. These efforts are designed to foster informed decision-making and enhance public involvement in democratic processes.<br><br></p>
     </section>
     <section id="events">
         <h2>Upcoming Events</h2>
-        <p>Check back for updates on community forums, advocacy initiatives, and civic meetings.</p>
+        <p>Check back for updates on community forums, advocacy initiatives, and civic meetings.<br><br></p>
     </section>
     <section id="get-involved">
         <h2>Get Involved</h2>
-        <p>Join us in making a difference! Volunteer, attend meetings, or donate to support our cause.</p>
+        <p>Join us in making a difference! Volunteer, attend meetings, or donate to support our cause.<br><br></p>
     </section>
     <section id="contact">
         <h2>Contact Us</h2>
-        <p>Email: info@lacelexington.org</p>
+        <p>Email: info@lacelexington.org<br><br></p>
     </section>
     <footer>
         &copy; 2025 Lexington Advocates for Civic Engagement
